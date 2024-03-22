@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Day</title>
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2018/10/Steam-coffee-logo-by-yahyaanasatokillah.jpg" type="image/jpg" sizes="32X32"/>
+    <link rel="stylesheet" href="./firstprojectstyle.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="">
+        <header>
+
+            <nav  class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand mx-3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABXFBMVEX///9eJwD//v////3///z9//9fKABEAAA5AABJAABDAAD+//u2jyZGAAA8AAA/AABdKABeJAAxAAAoAAAsAABeIwBiKAAwAABdIgBUGwBWMTBcHgBbJQNYHACofACqggC6l0yneQCgcgC2kCC3jypQAABJBwBOFABVDwDr4dzVyMLBr6lWFwBYIQDx797f1LnUvJGlfjC+omKWXgCibADVwpzi1K6lgSD49+ywhSq9oFju5szTuYPhyqDLsHTFqmm0jFXDqHe0ijTy59jMs43VxJOyjjSrfCLq4L69mEDLsZbYxqW2kVC5k2GlcAC6jCvFpW25pJarlI7bz8Z6WEHIpyp0SSnIvr2gg3Z9ZGJeOjDAmimSawxqQi2CbG2PcGFoNiJkT0SVfnqIZ1NJFhDY1M1IIhrGsKu8n3dmSEebe3BjKxpzWE2Xh4iqmY5jNy8ZAACsoKRjPDtuNxrWtbUNAAAMRElEQVR4nO2cj3MSSRbHe370ZGAGmCZhAqGBEAgw/FKzGieJP3blNuudq7dAzgS8iMtivLgmObP/f9W9N6C7lUSX7GkxTPUnpRYCVf3Ne/1+dQMhAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgE/kSmlKizXsTXhYLEQCMTwwi2REWWqTzrRXxVmqqszHoNXwMqK4pCDXJjtSkrgTShIRsKpcrNWy0iq3IQJYL5FOJufNMCYxo0iG6qUNUg27fvEHBWCDWzXs5XQKUq2Xx216WgTlaDaEOiqO5Wbhv2o0pkJYg2BKvtZHP3CEQZCDhBtKEhk/vZ3H0UBxsxiApB1INs7gEGGrBhELMFBJiHOXMbuop7TRLIbAEKb2YLP7iq7H77nQsaqRqwcAP770bezD0BYe63t56okPgD1iSqitLMm4VHhqpSY/X2RpMEzYaEEne1YGbvE6htmlv53VbQNiMU3uRermDeclVogHfWcj+0Zr2kLwl2TopM3TXTzP0NSlSFPMwW7jYpNhyzXtuXQcYkb0DlnS0U15qQ/knrbiH3CEQHprrx0jwlrWyxYG4YGGM2csX8HRKcPkqhmy4Fj3yQN838DTAifQyBdaupBGXsBiXb908hzZMWKMytgpdSNV8w8/dJkLqMJ9/sQJ54kjUL+cfY8u+aYEQSFCclmC02ID8Y7q5ZzD4BYcYqKPyhOetlfUFg593+O9Qxd7Jm7h9Q4hjbOdiSm7Ne1hdEkY2t2y5RWlkzewc6DLShCdYMDopBdvPfU9n4sYCW8/YhFOIkOJ2iYqhbuZsQRb/Lb8ADxYVYigqDgwL+CQqp+vRH1zBkyIfFgNnQIDdz2e8JcW8aFDopbPi9fRigfOjuFtZ2QA/2vSo+Motm9kaQFG7mi8+gD4YyDcIquZH9p2kWczvBEEipSpXmViH30HvoNRToo9DxQyEw48V9EVQ8Vfsua+Z3xo+h0dhZQ4XmNglGf4jNb3OtUNge2wuyvbpaKJqFAgSaYCiEBsKAdnBtYkJZJfezngmzrYBMvyH7QdeU+2lyeq/I7q4nsPCTSoOxD6k3vvjYR1B6L1dEhWub3plbAAC33C1kH5BJM0ibOMsAE+bxcD8QNQ308buFfOtD6lM2cBcWi9mbEHQCM6d5kH3kkslcbTPv7UJzq4lD1EDYEBJ+K/8jxJtxVPGqmSK6LVWCMk1UZeJ+2
+                    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" width="25px" alt="coffee-shop">
+                    <span class="ms-2">Coffee day...</span>
+                
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><i class="navbar-toggler-icon"></i></button>
+
+
+                 <!-- navbar first command -->
+                <div id="nav" class="navbar-collapse collapse  justify-content-between">
+
+                   <ul class="navbar-nav px-3">
+                     <li class="nav-item"><a href="#" class="nav-link text-uppercase">ABUT US</a></li>
+                     <li class="nav-item"><a href="#" class="nav-link text-uppercase">OUR COFFEE</a></li>
+                     <li class="nav-item"><a href="#" class="nav-link text-uppercase">THE COFFEE</a></li>
+                     <li class="nav-item"><a href="#" class="nav-link text-uppercase"> OURS COFFEE</a></li>
+                     <li class=" nav-item dropdown">
+                        
+                         <a href="#" class="nav-link dropdown-toggle text-uppercase fw-bold" data-bs-toggle="dropdown"> CONTACT</a>
+
+                          <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Yangon</a></li>
+                            <li><a href="#" class="dropdown-item">Pyin Oo Lwin</a></li>
+                            <li><a href="#" class="dropdown-item">Mandalay</a></li>
+                         </ul>
+                    
+                    
+                     </li>
+
+
+    
+                     </ul>
+
+               
+                    <div class="px-3">
+                        <a href="#" class="btn btn-outline-warning btn-sm rounded-0">sign-up</a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            
+
+        </header>
+
+        <!-- start section  -->
+
+        <section class="bg-light p-5">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2 class="firsth2">HOT SALE <h4 class="text-primary">SAVE UP TO 20%</h4></h2>
+                        <h1 class="firsth1">DUNKIN SPECIAL</h1>
+                        <h1 class="text-primary">COFFEE</h1>
+                        <p>
+                            orem Ipsum is simply dummy text of 
+                            the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s, when an unknown printer 
+                            took a galley of type and scrambled it to make a type 
+                            specimen book. It has survived not only five centuries,
+                          
+                        </p>
+                        <hr>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-primary fw-bold dollor">$39</span>
+                                <span class="text-danger fw-bold dollor">$35</span>
+                                <button class="btn btn-outline-success ">ORDER NOW</button>
+                                <button class="btn btn-outline-success ">SHOP NOW</button>
+                            </div>
+                        <hr>
+
+                    </div>
+
+                    <!-- image column -->
+                    
+                    <div class="col-md-5 coffeedirection">
+
+                        <div class="coffeecup1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYj9JAo7opZrtjRmf7XKHCf_VQ3yftZcHQEg&usqp=CAU" class="img-thumbnail coffeeimage" alt="coffee-shop">
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- second section -->
+
+        <section class="bg-light p-5">
+
+            <div class="row text-center">
+
+                <div class="col-md-3 col-sm-6 mb-3 mx-auto ">
+                    <div class="card">
+                        
+                        <img src="data:image/jpeg;base64,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"   alt="americano">
+
+                        <div class="card-body">
+                            <h5>This is an Americano</h5>
+                            <span class="fw-bold text-success">20$</span>
+                            <span class="fw-bold">35$</span>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-danger ">OK</button>                      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-3 mx-auto">
+                    <div class="card">
+                        <img src="https://www.nescafe.com/in/sites/default/files/2022-06/cortado-thumbnail-desktop.jpg"  alt="cartado">
+
+                        <div class="card-body">
+
+                            <h5>This is an Cortado</h5>
+                            <span class="fw-bold text-success">20$</span>
+                            <span class="fw-bold">35$</span>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-danger">OK</button>                      
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-3 mx-auto">
+                    <div class="card">
+                        <img src="https://www.nescafe.com/in/sites/default/files/2022-06/mocha-thumbnail-desktop.jpg" class="" alt="Mocha">
+
+                        <div class="card-body">
+
+                            <h5>This is an Mocha</h5>
+                            <span class="fw-bold text-success">20$</span>
+                            <span class="fw-bold"> 35$</span>
+                            
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-danger ">OK</button>                      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-3 ">
+                    <div class="card">
+                        <img src="https://www.nescafe.com/in/sites/default/files/2022-06/macchiato-thumbnail-desktop.jpg" alt="macchiato">
+
+                        <div class="card-body">
+
+                            <h5>This is an Flat Macchiato</h5>
+                            <span class="fw-bold text-success">20$</span>
+                            <span class="fw-bold">35$</span>
+                         
+
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn btn-outline-danger ">OK</button>                      
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- second next row -->
+
+            
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h5 class="text-center fw-bold">SPECIAL MEMBER PRESENT</h5>
+                            <p class="card-subtitle lead">Myanmar new year for disscount</p>
+
+                        </div>
+
+                        <div class="card-body">
+                            
+                                <table class="table table-striped table-hover">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Menu Coffee</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Americano</td>
+                                        <td class="text-danger">$3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Double Expresso.</td>
+                                        <td class="text-danger">$3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Cappacino..</td>
+                                        <td class="text-danger">$5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Latte</td>
+                                        <td class="text-danger">$3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Cinnamon Rool</td>
+                                        <td class="text-danger">$5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Sgort Black </td>
+                                        <td class="text-danger">$7</td>
+                                    </tr>
+                                </table>
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 ">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h5 class="text-center fw-bold">SPECIAL DISCOUNT COFFEE PRICE <span class="fw-bold text-success">5%</span> </h5>
+                            <p class="card-subtitle lead">Myanmar Happy Thingyan Festival</p>
+                        </div>
+
+                        <div class="card-body text-centerv">
+                            
+                                <table class="table table-striped table-hover">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Menu Jues</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Lemon Merinque Pie</td>
+                                        <td class="text-danger">$3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Oameal Cookie</td>
+                                        <td class="text-danger">$3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Chocolate Cupcake.</td>
+                                        <td class="text-danger">$5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Apple Turnover</td>
+                                        <td class="text-danger">$3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Cinnamon Rool</td>
+                                        <td class="text-danger">$5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Enqlish Scone  </td>
+                                        <td class="text-danger">$7</td>
+                                    </tr>
+                                </table>
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- third section -->
+
+
+        <section class="bg-light p-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- contect form -->
+                    <div class="col-md-6 col-sm-12">
+                        <form action="" enctype="multipart/form-data">
+    
+                            <div class="form-group text-center">
+                                <h1 class="fw-bold ">Got questions?</h1>
+                                <p  class="lead text-danger" >stay contect</p>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="name" class="fw-bold">Name</label>
+                                <input type="text" id="name" name="name" class="form-control rounded-0" placeholder="Enter your name" /> 
+
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="email" class="fw-bold">Email</label>
+                                <input type="email" id="email" name="email" class="form-control rounded-0" placeholder="Enter your Email" /> 
+
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="password" class="fw-bold">Password</label>
+                                <input type="password" id="password" name="password" class="form-control rounded-0" placeholder="Enter your password" /> 
+
+                            </div>
+
+                            <div class="d-grid ">
+                                <a href="" class="btn btn-warning">Submit</a>
+
+                            </div>
+
+                            
+
+    
+                        </form>
+    
+                    </div>
+    
+                    <!-- contect map -->
+    
+                    <div class="col-md-6 col-sm-12">
+                        
+    
+                    </div>
+                     
+                </div>
+
+            </div>
+          
+
+
+        </section>
+        
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"></script>
+
+
+
+
+
+
+</body>
+</html>

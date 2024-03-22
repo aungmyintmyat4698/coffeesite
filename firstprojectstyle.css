@@ -1,0 +1,48 @@
+.firsth2{
+    color: orange;
+    
+}
+
+.firsth1{
+    color: orange;
+}
+
+.dollor{
+    font-size: 22px;
+}
+
+.coffeedirection{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffeeimage{
+    width: 400px;
+    height: 70px;
+    border-radius: 3px;
+    box-shadow: -7px 5px 5px rgba(0,0,0,0.3);
+    
+}
+
+.coffeeimage:hover{
+
+    box-shadow:  -7px 5px 5px rgba(201, 76, 76, 0.3);
+}
+
+.btn{
+    font-size: 23px;
+
+}
+
+.btn:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+

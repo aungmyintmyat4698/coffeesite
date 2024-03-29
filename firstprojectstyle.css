@@ -41,7 +41,18 @@
     background-color: whitesmoke;
 }
 
+.maps{
+    width:100% ;
+    height: 250px;
+}
 
+.mapfoot{
+    height: 130px;
+}
+
+.darkbar{
+    height: 55px;
+}
 
 
 
